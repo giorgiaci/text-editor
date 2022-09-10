@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="text_editor.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Simple JavaScript text editor</title>
+</head>
+
+<body>
+  <h1 style="text-align: center;">- Giorgia text editor -</h1>
+  <div class="contenitore">
+    <div class="flex-container">
+      <div class="header" style="flex-grow: 2">
+        <form action="/action_page.php">
+          <label for="fname">Click counter:</label>
+          <div id="clickCounter" style="color: black;">o</div>
+        </form>
+      </div>
+      <div class="header" style="flex-grow: 2">
+        <form action="/action_page.php">
+          <label for="click">Button counter:</label>
+          <div id="buttonCounter" style="color: black;">o</div>
+        </form>
+      </div>
+      <div class="header" style="flex-grow: 2">
+        <form action="/action_page.php" style="border: 0;">
+          <label for="click">Modal counter:</label>
+          <div id="modalCounter" style="color: black;">o</div>
+        </form>
+      </div>
+    </div>
+    <div class="flex-container flex2">
+      <div style="flex-basis: 20%;">       
+     
+        <button class="btnCnt">Color <input name="color-picker" type="color" id="colorWell"></button>
+        <button class="btnCnt" id="colorPicker">Font
+         <select id="selectLanguage">
+          <option>Georgia</option>
+          <option>Palatino Linotype</option>
+          <option>Book Antiqua</option>
+          <option>Times New Roman</option>
+          <option>Arial</option>
+          <option>Helvetica</option>
+          <option>Arial Black</option>
+          <option>Impact</option>
+          <option>Lucida Sans Unicode</option>
+          <option>Tahoma</option>
+          <option>Verdana</option>
+          <option>Courier New</option>
+          <option>Lucida Console</option>
+        </select>
+        </button>
+       
+        <button class="btnCnt" id="delete" style="background-color: #a0427e;">Reset</button>
+
+      </div>
+   
+      <div class="item5" style="flex-basis: 80%;">
+
+        <textarea id="text-editor" placeholder="..."></textarea>
+
+      </div>
+    </div>
+
+  </div>
+  <script src="text_editor.js"></script>
+</body>
+
+</html>
